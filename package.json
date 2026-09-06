@@ -1,0 +1,59 @@
+{
+	"name": "@liquicode/jsonstor-browser",
+	"version": "0.1.0",
+	"description": "A jsonstor adapter for the browser storages: local storage, the Origin Private File System, and IndexedDB.",
+	"license": "MIT",
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"homepage": "http://jsonstor.liquicode.com",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/liquicode/jsonstor-browser"
+	},
+	"authors": [
+		{
+			"name": "Andre' G. Bowlin",
+			"email": "agbowlin@gmail.com",
+			"homepage": "http://liquicode.com"
+		}
+	],
+	"type": "commonjs",
+	"main": "src/jsonstor-browser.js",
+	"types": "./types/jsonstor-browser.d.ts",
+	"exports": {
+		".": {
+			"types": "./types/jsonstor-browser.d.ts",
+			"import": "./src/jsonstor-browser.mjs",
+			"require": "./src/jsonstor-browser.js",
+			"default": "./src/jsonstor-browser.js"
+		},
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"src",
+		"types",
+		"license.md",
+		"readme.md",
+		"history.md"
+	],
+	"scripts": {
+		"publish version": "npx @liquicode/devops --tasks .\\build\\devops.tasks.js publish_version",
+		"start new version": "npx @liquicode/devops --tasks .\\build\\devops.tasks.js start_new_version"
+	},
+	"keywords": [
+		"jsonstor",
+		"browser",
+		"localstorage",
+		"opfs",
+		"indexeddb",
+		"mongo query"
+	],
+	"devDependencies": {
+		"@liquicode/devops": "^0.1.0"
+	},
+	"dependencies": {
+		"@liquicode/jsongin": "^0.1.0",
+		"@liquicode/jsonstor": "^0.1.0"
+	}
+}
