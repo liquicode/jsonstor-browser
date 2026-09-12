@@ -354,10 +354,10 @@ module.exports = {
 		//=====================================================================
 
 
-		Storage.FindMany2 = async function FindMany2( Criteria, Projection, Sort, MaxCount, Options )
+		Storage.FindMany2 = async function FindMany2( Criteria, Projection, Sort, Paging, Options )
 		{
 			await ensure_loaded();
-			let results = await Storage.MemoryStorage.FindMany2( Criteria, Projection, Sort, MaxCount, Options );
+			let results = await Storage.MemoryStorage.FindMany2( Criteria, Projection, Sort, Paging, Options );
 			return results;
 		};
 
