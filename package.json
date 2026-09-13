@@ -1,6 +1,6 @@
 {
 	"name": "@liquicode/jsonstor-browser",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "A jsonstor adapter for the browser storages: local storage, the Origin Private File System, and IndexedDB.",
 	"license": "MIT",
 	"engines": {
@@ -53,7 +53,7 @@
 		"@liquicode/devops": "^0.1.0"
 	},
 	"dependencies": {
-		"@liquicode/jsongin": "^0.1.0",
-		"@liquicode/jsonstor": "^0.1.0"
+		"@liquicode/jsongin": "^0.2.0",
+		"@liquicode/jsonstor": "^0.2.0"
 	}
 }

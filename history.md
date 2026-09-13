@@ -5,9 +5,14 @@
 # Project History
 
 
-v0.1.0
+v0.2.0 (current)
 ---------------------------------------------------------------------
 
-- Initial version. The browser storages - local storage, the Origin Private File System and
-  IndexedDB - rolled into one package as three primes.
+***First release.***
 
+The browser storages in one package: `localStorage`, the Origin Private File System, and
+  IndexedDB, each registered under its own name.
+
+- Built on `@liquicode/jsonstor` 0.2.0 and `@liquicode/jsongin` 0.2.0. A criteria the engine
+  refuses is refused before the storage acts on it.
+- Declares Node.js `>=18.0.0` in `engines`.
