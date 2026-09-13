@@ -23,9 +23,9 @@ declare module '@liquicode/jsonstor-browser'
 		CollectionName: string;
 		/** ***The two blob storages only.*** Write the collection out after every insert, update, replacement or delete. Turn it off to batch a run of writes and call `FlushStorage()` yourself. `jsonstor-browser-indexeddb` writes a record at a time and has nothing to flush. Defaults to `true`. */
 		AutoFlush?: boolean;
-		/** The document field which is the identifier. Name the field an existing store is already keyed on to read one. Defaults to `"_id"`. */
+		/** The field which holds the identifier. Set it to the key field of an existing store. Defaults to `"_id"`. */
 		PrimaryKey?: string;
-		/** Allow an update or a replacement to change the identifier. Off by default, so an operation which would move it is refused by name rather than silently discarded. Defaults to `false`. */
+		/** Allow an update or replacement to change the identifier. When `false`, such an operation is refused. Defaults to `false`. */
 		PrimaryKeyMutable?: boolean;
 		/** ***The two blob storages only.*** Hold an index over the identifier, so a lookup by it costs one entry rather than the whole collection. Off by default, because an index over a store something else writes goes stale - call `RefreshIndex()` when it might have. `jsonstor-browser-indexeddb` hosts its own index and takes no such setting. Defaults to `false`. */
 		HostIndex?: boolean;
